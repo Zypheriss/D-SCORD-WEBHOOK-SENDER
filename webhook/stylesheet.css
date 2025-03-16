@@ -1,0 +1,146 @@
+﻿/*   
+  Project by Liviuxs
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+#header {
+    margin-top: 60px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#container {
+    margin: 50px auto;
+    background: rgb(45, 45, 45);
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+}
+
+.center-align {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #ddd;
+    margin: 20px 0;
+}
+
+a, a:visited {
+    color: #c9c9c9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#link, #username, #content, #avatar {
+    font-size: 18px;
+    background-color: #333;
+    width: 80%;
+    padding: 15px;
+    border: 2px solid #444;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#link:focus, #username:focus, #content:focus, #avatar:focus {
+    border-color: #1d6e6e;
+}
+
+#btn {
+    width: 40%;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #1d6e6e;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #365a3f;
+    transform: translateY(-3px);
+}
+
+#btn:active {
+    transform: translateY(2px);
+}
+
+#log {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(110, 255, 43);
+    color: green;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #header {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #link, #username, #content, #avatar {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #btn {
+        width: 50%;
+    }
+}
